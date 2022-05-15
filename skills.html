@@ -22,6 +22,24 @@
              width: 150px;
              height: 150px;
            }
+           .grid-container {
+              display: grid;
+               grid-template-columns: auto auto auto;
+              background-color: #2196F3;
+              padding: 10px;
+           }
+         .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+             border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px) {
+             .grid-container{
+               grid-template-columns: auto auto;
+             }
+            }
         </style>
     </head>
     <body>
@@ -81,49 +99,20 @@
 
         <br><br><br>
 
-        <div class="row">
-            <div class="col">
-              <img class="gd" src="./images/c.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/cpp.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/java.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/python.jpg"></img>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <img class="gd" src="./images/android.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/node.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/react-native.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/web.jpg"></img>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <img class="gd" src="./images/angular.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/github.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/js.jpg"></img>
-            </div>
-            <div class="col">
-              <img class="gd" src="./images/mysql.jpg"></img>
-            </div>
-          </div>
+        <div class="grid-container">
+          <div class="grid-item"><img class="gd" src="./images/c.jpg"></img></div>
+          <div class="grid-item"> <img class="gd" src="./images/cpp.jpg"></img></div>
+          <div class="grid-item"> <img class="gd" src="./images/java.jpg"></img></div>  
+          <div class="grid-item"><img class="gd" src="./images/python.jpg"></img></div>
+          <div class="grid-item"><img class="gd" src="./images/android.jpg"></img></div>
+          <div class="grid-item"><img class="gd" src="./images/node.jpg"></img></div>  
+          <div class="grid-item"><img class="gd" src="./images/react-native.jpg"></img></div>
+          <div class="grid-item"><img class="gd" src="./images/web.jpg"></img></div>
+          <div class="grid-item"><img class="gd" src="./images/angular.jpg"></img></div>  
+          <div class="grid-item"><img class="gd" src="./images/github.jpg"></img></div>
+          <div class="grid-item"> <img class="gd" src="./images/js.jpg"></img></div>
+          <div class="grid-item"><img class="gd" src="./images/mysql.jpg"></img></div>  
+        </div>
+        
     </body>
 </html>
