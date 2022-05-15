@@ -18,6 +18,23 @@
                margin-top:10px;
                margin-left: 0%;
            } 
+           .grid-container {
+             display: grid;
+             grid-template-columns: auto auto;
+             background-color: cornflowerblue;
+               padding: 10px;
+           }
+         .grid-item {
+             background-color: rgba(255, 255, 255, 0.8);
+             border: 1px solid rgba(0, 0, 0, 0.8);
+             padding: 20px;
+             font-size: 30px;
+             text-align: center;
+          }
+          @media only screen and (max-width: 1200px) {
+             .grid-container{
+               grid-template-columns: auto;
+             }}
          </style>
     </head>
     <body>
@@ -76,35 +93,44 @@
           <br><br><br>
 
 
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">PRIMARY EDUCATION</h5>
-                <h6 class="card-subtitle mb-2 text-muted">S.D.M Mayyady</h6>
-                <p class="card-text">PASS</p> 
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">HIGHSCHOOL EDUCATION</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Govt. Junior College Byndoor</h6>
-                <p class="card-text">(10th) 93.56%</p> 
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">PUC EDUCATION</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Govt. Pre-University College Byndoor</h6>
-                <p class="card-text">(12th) 88%</p> 
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
+
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Engineering EDUCATION</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">The NationalInstitute of Engineering Mysore</h6>
-                  <p class="card-text">9.1 (cgpa)</p> 
+                  <h5 class="card-title">PRIMARY EDUCATION</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">S.D.M Mayyady</h6>
+                  <p class="card-text">PASS</p> 
                 </div>
               </div>
+             </div>
+              <div class="grid-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">HIGHSCHOOL EDUCATION</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Govt. Junior College Byndoor</h6>
+                    <p class="card-text">(10th) 93.56%</p> 
+                  </div>
+              </div>
+              </div>
+              <div class="grid-item"> 
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">PUC EDUCATION</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Govt. Pre-University College Byndoor</h6>
+                    <p class="card-text">(12th) 88%</p> 
+                  </div>
+                </div>
+              </div>  
+              <div class="grid-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Engineering EDUCATION</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">The NationalInstitute of Engineering Mysore</h6>
+                    <p class="card-text">9.1 (cgpa)</p> 
+                  </div>
+                </div>
+              </div> 
             </div>
     </body>
 </html>
