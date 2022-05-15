@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Personal website</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+       <style>
+           /* .imgh1{
+               width: 100%;
+               height: 300px;
+           }*/
+           body{
+            background-color: #772f1a;
+background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+
+
+           }
+           .imgshiva{
+               width: 250px;
+               height: 250px;
+               position: fixed;
+               margin-top:200px;
+               margin-left: 38%;
+               /* width: 150px;
+               height: 150px;
+               position: fixed;
+               margin-top:20px;
+               margin-left: 0%; */
+           } 
+           .carousel{
+             position: -webkit-sticky;
+             position: sticky;
+             top: 0;
+               width: 100%;
+           }
+           .carousel-inner{
+               height: 300px;
+           }
+           .item, img{
+               height: 300px;
+               width: 100%;
+           }
+           .set{
+             margin-top: 300px;
+             position: fixed;
+             margin-left: 85%;
+           }
+           .navbar{
+             height: 2px;
+           }
+           .gd{
+             height: 150px;
+             width: 150px;
+           }
+           @media only screen and (max-width: 600px) {
+            .imgshiva {
+              width: 100px;
+               height: 100px;
+               position: fixed;
+               margin-top:150px;
+               margin-left: 38%;
+                }
+             .carousel-inner{
+               height: 200px;
+               }
+            }
+
+       </style>
+    </head>
+    <body>
+         <!-- <nav class="navbar sticky-top navbar-light bg-light">
+            <div class="container-fluid">
+               <img class="navbar-brand imgh1" src="./images/mica.jpg"></img> 
+            </div>
+         </nav> -->
+
+
+         <nav class="navbar navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Shivakumar m shetty</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a type="button" class="btn btn-primary" href="./profile.html">PROFILE</a>
+                  </li>
+                  <br>
+                  <li class="nav-item">
+                    <a type="button" class="btn btn-primary" href="./education.html">EDUCATION</a>
+                  </li>
+                  <br>
+                  <li class="nav-item">
+                    <a type="button" class="btn btn-primary" href="./skills.html">SKILLS</a>
+                  </li>
+                  <br>
+                  <li class="nav-item">
+                    <a type="button" class="btn btn-primary" href="./certifications.html">CERTIFICATIONS</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/developerText.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/mica.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/computerProgram.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/coder.jpg" class="d-block w-100" alt="...">
+              </div>
+              <img class="imgshiva" src="./images/shivu.png" ></img>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <!-- <div class="btn-group-vertical set">
+          <button type="button" class="btn btn-primary">PROFILE</button>
+          <button type="button" class="btn btn-primary">EDUCATION</button>
+          <button type="button" class="btn btn-primary">SKILLS</button>
+          <button type="button" class="btn btn-primary">CERTIFICATIONS</button>
+          </div> -->
+
+          <section class="profile">
+           <br>
+            <!-- <img src="./images/c.jpg"></img>
+            <img src="./images/cpp.jpg"></img> -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img class="gd" src="./images/c.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/cpp.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/java.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/python.jpg"></img>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <img class="gd" src="./images/android.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/node.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/react-native.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/web.jpg"></img>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <img class="gd" src="./images/angular.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/github.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/js.jpg"></img>
+                </div>
+                <div class="col">
+                  <img class="gd" src="./images/mysql.jpg"></img>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+          <br>
+          <button class="btn btn-lg btn-danger">Download Resume</button>
+          <br>
+          <br>
+          <section class="education">
+            <!-- <div class="row">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">PRIMARY EDUCATION</h5>
+                <h6 class="card-subtitle mb-2 text-muted">S.D.M Mayyady</h6>
+                <p class="card-text">PASS</p> 
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">HIGHSCHOOL EDUCATION</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Govt. Junior College Byndoor</h6>
+                <p class="card-text">(10th) 93.56%</p> 
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">PUC EDUCATION</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Govt. Pre-University College Byndoor</h6>
+                <p class="card-text">(12th) 88%</p> 
+              </div>
+            </div>
+            </div> -->
+          </section>
+          <section class="skill">
+
+          </section>
+          <section class="certifications">
+
+          </section>
+          <!-- <img class="imgshiva" src="./images/shivu.png" ></img> -->
+    </body>
+</html>
